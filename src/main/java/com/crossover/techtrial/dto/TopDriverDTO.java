@@ -3,11 +3,13 @@
  */
 package com.crossover.techtrial.dto;
 
+import java.io.Serializable;
+
 /**
  * @author crossover
  *
  */
-public class TopDriverDTO {
+public class TopDriverDTO implements Serializable {
   
   /**
    * Constructor for TopDriverDTO

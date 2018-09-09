@@ -3,7 +3,11 @@
  */
 package com.crossover.techtrial.service;
 
-import com.crossover.techtrial.model.Ride;
+import com.crossover.techtrial.dto.RideDTO;
+import com.crossover.techtrial.dto.TopDriverDTO;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * RideService for rides.
@@ -12,9 +16,10 @@ import com.crossover.techtrial.model.Ride;
  */
 public interface RideService {
   
-  public Ride save(Ride ride);
+  public RideDTO save(RideDTO ride);
   
-  public Ride findById(Long rideId);
-  
+  public RideDTO findById(Long rideId);
+
+  public List<TopDriverDTO> getTopDrivers(Long max, LocalDateTime startDate, LocalDateTime endDate);
 
 }

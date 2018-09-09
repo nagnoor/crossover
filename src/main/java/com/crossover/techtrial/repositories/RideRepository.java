@@ -7,6 +7,9 @@ import com.crossover.techtrial.model.Ride;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RestResource;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 /**
  * @author crossover
  *
